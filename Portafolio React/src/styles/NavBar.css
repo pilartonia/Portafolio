@@ -1,7 +1,3 @@
-a:hover{
-    color: blue;
-}
-
 .wrapper{
     position: absolute;  
     width: 100%;  
@@ -9,16 +5,12 @@ a:hover{
     margin: 0;  
     padding: 0;  
     background-color: rgb(175, 158, 205);
+    z-index: 1; 
 }
-
-.NavBar{
-    display: flex;
-    height: auto;
-    width: auto;
-    cursor: pointer;
+.NavLink{
+    text-decoration: none;
     color: black;
-    font-size: 30px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: color 0.3s ease;
 }
 
 .option{
@@ -27,6 +19,35 @@ a:hover{
     margin: 0;  
     padding: 0;  
     text-align:center;
+    color: black;
+    z-index: 3; 
 }
+
+.option:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.NavBar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    z-index: 2; 
+}
+
+@media (max-width: 768px) {
+    .NavBar {
+        font-size: 20px;
+        flex-direction: column;
+    }
+    .option {
+        padding: 10px 0;
+    }
+}
+
+
 
 

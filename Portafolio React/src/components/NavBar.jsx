@@ -1,17 +1,17 @@
 import '../styles/NavBar.css';
-import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import { Navigate } from 'react-router-dom';
 
 const NavBar=()=>{
- const Navigate = useNavigate();
-    
+    const navigate = useNavigate();
+    const handleNavigation = (path) => {navigate(path);
+    };
     return(
-        <header className="wrapper">
+        <header className='wrapper'>
             <nav className="NavBar">
-                <div className="option"><a onClick={() => Navigate("/Home")}>Home</a></div>
-                <div className="option"><a onClick={() => Navigate("/Projects")}>Projects</a></div>
-                <div className="option"><a onClick={() => Navigate("/Contact")} >Contact</a></div>
+               <div className="option"><a onClick={() => handleNavigation("/Home")} className='NavLink'>Home</a></div>
+                <div className="option"><a onClick={() => handleNavigation("/Projects")} className='NavLink'>Projects</a></div>
+                <div className="option"><a onClick={() => handleNavigation("/Contact")} className='NavLink'>Contact</a></div> 
             </nav>
         </header>
     )

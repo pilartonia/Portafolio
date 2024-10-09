@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './App.css';
 import NavBar from './components/NavBar.jsx';
 import Contact from './components/Contact.jsx';
@@ -7,23 +6,21 @@ import { BrowserRouter as Router, Routes, Route, BrowserRouter } from "react-rou
 import { Navigate } from 'react-router-dom';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-
     <BrowserRouter>
+    <NavBar></NavBar>
     <Routes>
       <Route path="/" element={<Navigate to="/Home" />} />
       <Route path="/Home" element={<>
-      <NavBar></NavBar>
         <div className='contenido'>
-        <img src='src/img/perfil.png' className='foto'></img>
-        <div className='info'>
-          <p> Hello i am<h1>Pilar,</h1>
-          <h2>Junior frontend developer</h2></p>
-          <p> With expertise in HTML, CSS, JavaScript, and React. </p>
-        </div>
+          <img src='src/img/perfil.png' className='foto'/>
+          <div className='info'>
+            <p> Hello i am</p>
+            <h1>Pilar,</h1>
+            <h2>Junior frontend developer</h2>
+            <p> With expertise in HTML, CSS, JavaScript, and React.</p>
+          </div>
         </div>
       </>}
       />

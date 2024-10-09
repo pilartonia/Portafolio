@@ -6,13 +6,22 @@ body {
     min-height: 100vh;
     background: linear-gradient(90deg, rgba(82,47,232,1) 0%, rgba(156,76,237,1) 35%, rgba(107,41,132,1) 100%);
     background-size: cover;
+    color: antiquewhite
+  }
+
+  .container{
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin: 200px;
   }
   
   h1 {
     font-size: 30px;
     line-height: 1.1;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+    color: antiquewhite
   }
   
   h2 {
