@@ -10,11 +10,12 @@ body {
   }
 
   .container{
-    display: flex;
-    place-items: center;
-    justify-content: space-between;
-    position: relative;
-    margin: 200px;
+    display:block;
+    margin: 150px;
+  }
+  
+  .bold-text {
+    font-weight: bold;
   }
   
   h1 {

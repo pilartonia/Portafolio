@@ -7,8 +7,8 @@ const Projects=()=>{
         <div className='projects'>
             <img src='src/img/ojodelaguna.png' className='fotoOjo'/>
             <div className='descripcion'>
-                <p>Este proyecto es una Tienda online de venta de arte donde el cliente pueda observar el catálogo disponible, realizar una solicitud personalizada, una descripción de las técnicas de las piezas, Adquirir obras, inscribirse a talleres y seguir las redes sociales del proyecto​. Fue construida usando React.js en el frontend.</p>
-                <a href='https://github.com/pilartonia/team12ODL'>Repositorio</a>
+                <p>This project is an online art store where customers can browse the available catalog, make personalized requests, view descriptions of the techniques used in the pieces and purchase artworks. It was built using React.js on the frontend.</p>
+                <a href='https://github.com/pilartonia/team12ODL'>Repository</a>
             </div>
         </div>
         
